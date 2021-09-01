@@ -1,0 +1,10 @@
+.container{
+    border: 5px solod black;
+}
+.row{
+    border:3px solid red;
+}
+.col{
+    border:3px solid green;
+    width:50px;
+}

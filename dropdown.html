@@ -1,0 +1,99 @@
+<html>
+<head>
+    <style>
+        * {
+            padding:0;
+            margin:0;
+        }
+        body {
+            background-color:darkturquoise;
+            box-sizing:border-box;
+            font-family:arial;
+            font-size:20px;
+           }
+        .menuu {
+            text-align:center;
+            background-color: forestgreen;
+           }
+        .menuu ul {
+            display:inline-flex;
+            color:white;
+            padding:5px;
+            list-style:none;
+             }
+        .menuu ul li {
+            width:100px;
+            margin:15px;
+            padding:15px;
+           }
+        .menuu ul li a {
+            text-decoration:none;
+            color:white;
+            }
+        .menuu ul li:hover{
+            background-color:limegreen;
+            border-radius:5px;
+           }
+        .sub-menu {
+            display:none;
+            }
+        .menuu ul li:hover .sub-menu {
+            display:block;
+            position:absolute;
+            background-color:forestgreen;
+            margin-top:15px;
+            margin-left:15px;
+        }
+        .menuu ul li:hover .sub-menu ul {
+            display:block;
+            margin:5px;
+            }
+        .menuu ul li:hover .sub-menu ul li {
+            width:100px;
+            padding:10px;
+            border-bottom: 1px dotted white;
+            background: transparent;
+            border-radius:0;
+            text-align:left;
+        }
+        .menuu ul li:hover .sub-menu ul li:last-child {
+            border-bottom:none;
+          }
+        .menuu ul li:hover .sub-menu ul li a:hover {
+            color:deeppink;
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+    <div class="menuu">
+        <ul>
+            <li> <a href="#"> Home </a> </li>
+            <li> <a href="#"> Services </a>
+                <div class="sub-menu">
+                     <ul>
+                        <li> <a href="#"> Mission </a></li>
+                        <li> <a href="#"> Vision </a></li>
+                        <li> <a href="#"> Team </a></li>
+                     
+                    
+                    </ul>
+                </div>
+            </li>
+
+                 <!---- APPLY SAVE CONTENT FOR SUB-MENU IN OTHER LI's-->
+
+            <li> <a href="#"> Contact Us </a></li>
+            <li> <a href="#"> About Us </a> </li>
+            <li> <a href="#"> Investors </a></li>
+            <li> <a href="#"> Clients </a> </li>
+            <li> <a href="#"> Training </a> </li>
+        </ul>
+    </div>
+
+
+</body>
+</html>
